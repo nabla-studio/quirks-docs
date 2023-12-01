@@ -37,7 +37,4 @@ export default defineConfig({
       },
     }),
   ],
-  redirects: {
-    "/": "https://quirks.nabla.studio",
-  },
 });
