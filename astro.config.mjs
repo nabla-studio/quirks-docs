@@ -3,9 +3,6 @@ import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
-  redirects: {
-    "/": "/getting-started",
-  },
   integrations: [
     starlight({
       title: "Quirks",
@@ -40,4 +37,7 @@ export default defineConfig({
       },
     }),
   ],
+  redirects: {
+    "/": "https://quirks.nabla.studio",
+  },
 });
