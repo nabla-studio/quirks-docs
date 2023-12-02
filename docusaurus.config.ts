@@ -51,6 +51,7 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/opengraph-image.jpg',
+    twitterImage: 'img/opengraph-image.jpg',
     navbar: {
       logo: {
         alt: 'Quirks Logo',
@@ -120,6 +121,17 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+    metadata: [
+      {name: 'description', content: 'Quirks is a universal wallet adapter that easily connect your dapp with existing wallets in the Cosmos blockchain ecosystem.'},
+      {name: 'og:title', content: 'Quirks'},
+      {name: 'og:site-name', content: 'Quirks'},
+      {name: 'og:description', content: 'Quirks is a universal wallet adapter that easily connect your dapp with existing wallets in the Cosmos blockchain ecosystem.'},
+      {name: 'og:type', content: 'website'},
+      {name: 'twitter:title', content: 'Quirks'},
+      {name: 'twitter:site', content: '@nabla_hq'},
+      {name: 'twitter:description', content: 'Quirks is a universal wallet adapter that easily connect your dapp with existing wallets in the Cosmos blockchain ecosystem.'},
+      {name: 'twitter:card', content: 'summary_large_image'},
+    ]
   } satisfies Preset.ThemeConfig,
 };
 
