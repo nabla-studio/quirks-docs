@@ -72,6 +72,7 @@ These are the basic pieces and principles we kept as we developed Quirks::
 |      Plugins       |                               🔜                               |                                   ❌                                    |                                   ❌                                   |
 |      Bundle Size       | [2.3KB](https://bundlephobia.com/package/@quirks/react@0.3.10) | [16.7KB](https://bundlephobia.com/package/@cosmos-kit/react-lite@2.5.9) | [109.1KB](https://bundlephobia.com/package/graz@0.1.1)* |
 | Vendor Chunk Splitting |                               ✅                               |                                   ❌                                    |                                   ❌                                    |
+| UI Kit |                               🔜                               |                                   ✅                                    |                                   ❌                                    |
 
 \* They offer several features, not only connecting and managing everything related to the wallet, this justifies the clear difference from other adapters.
 
