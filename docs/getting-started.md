@@ -1,6 +1,7 @@
 ---
 title: Overview
 description: Why quirks? Should I use that?
+sidebar_position: 1
 ---
 
 Quirks is a universal wallet adapter that easily connect your dapp with existing wallets in the Cosmos blockchain ecosystem.
