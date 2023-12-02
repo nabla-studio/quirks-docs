@@ -123,7 +123,7 @@ const config: Config = {
     metadata: [
       {name: 'description', content: 'Quirks is a universal wallet adapter that easily connect your dapp with existing wallets in the Cosmos blockchain ecosystem.'},
       {name: 'og:title', content: 'Quirks'},
-      {name: 'og:site-name', content: 'Quirks'},
+      {name: 'og:site_name', content: 'Quirks'},
       {name: 'og:description', content: 'Quirks is a universal wallet adapter that easily connect your dapp with existing wallets in the Cosmos blockchain ecosystem.'},
       {name: 'og:type', content: 'website'},
       {name: 'twitter:title', content: 'Quirks'},
