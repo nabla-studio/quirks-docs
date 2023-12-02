@@ -39,7 +39,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/nabla-studio/quirks/tree/main/docs/overview',
+            'https://github.com/nabla-studio/quirks/tree/main/docs/intro',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -79,7 +79,7 @@ const config: Config = {
           items: [
             {
               label: 'Getting Started',
-              to: '/docs/overview',
+              to: '/docs',
             },
           ],
         },
