@@ -50,8 +50,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/opengraph-image.jpg',
-    twitterImage: 'img/opengraph-image.jpg',
+    image: 'https://quirks-docs.vercel.app/img/opengraph-image.jpg',
     navbar: {
       logo: {
         alt: 'Quirks Logo',
