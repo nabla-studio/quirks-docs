@@ -88,7 +88,7 @@ const { wallets } = useConfig();
 ### Available Hooks
 
 - **[useConnect](./hooks/use-connect)**
-- **[useChain](./hooks/use-hain)**
+- **[useChain](./hooks/use-chain)**
 - **[useChains](./hooks/use-chains)**
 - **[useConfig](./hooks/use-config)**
 - **[useWalletConnect](./hooks/use-wallet-connect)**
