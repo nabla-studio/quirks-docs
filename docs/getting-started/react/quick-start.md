@@ -8,7 +8,7 @@ Import and configure `QuirksConfig` context provider inside your app.tsx or root
 ```tsx
 import { osmosis, osmosisAssetList } from "@nabla-studio/chain-registry";
 import { QuirksConfig } from "@quirks/react";
-import { Config, ssrPersistOptions } from "@quirks/store";
+import { Config } from "@quirks/store";
 import { keplrExtension, leapExtension } from "@quirks/wallets";
 import { PropsWithChildren } from "react";
 
