@@ -5,7 +5,7 @@ sidebar_position: 1
 slug: /
 ---
 
-Quirks is a universal wallet adapter that easily connect your dapp with existing wallets in the Cosmos blockchain ecosystem.
+Quirks is a universal wallet adapter that easily connects your dapp with existing wallets in the Cosmos blockchain ecosystem.
 
 It was born with the idea of: **“Write once, use everywhere”**.
 
@@ -14,9 +14,9 @@ It was born with the idea of: **“Write once, use everywhere”**.
 I don't like the current state of the libraries that allow dApps to be connected to Wallets:
 
 1. Too many dependencies to import, impacting the weight of my final app too much
-2. Anyone is often forced to use specific frameworks/libraries (often React)
-3. No support for native mobile development, many difficulties in developing native dApps
-4. Often relying on a specific library or framework, we were forced to use techniques of interactions with the adapter that went through specific patterns (such as hooks), wouldn't it be better if we could contact the wallets as if they were a service/server responding to our requests? So by simply writing promises?
+2. Anyone is usually forced to use specific frameworks/libraries (as React, for instance)
+3. No support for native mobile development, with many difficulties in developing native dApps
+4. Often relying on a specific library or framework, we were forced to use techniques of interactions with the adapter that went through specific patterns (such as hooks). Wouldn't it be better if we could contact the wallets as if they were a service/server responding to our requests? Doing so by simply writing promises?
 
 **These are the reasons why Quirks was born and what the library solves.**
 
@@ -26,7 +26,7 @@ It is a very open topic in the developer community, there is definitely quite a 
 
 ## Solution
 
-These are the basic pieces and principles we kept as we developed Quirks::
+These are the basic pieces and principles we kept as we developed Quirks:
 
 1. Framework agnostic (Support for React and Vue 3, more to come in the next future);
 2. SSR Support (NextJS and NuxtJS);
@@ -48,7 +48,7 @@ These are the basic pieces and principles we kept as we developed Quirks::
   4. xDefi
   5. Station
 - Fully typed and tree-shakeable
-- Global state even outside the frameworks
+- Global state even outside of the frameworks
 - Web Broadcast API Support
 - Wallet Connect Support
 
@@ -61,18 +61,18 @@ These are the basic pieces and principles we kept as we developed Quirks::
 
 ## Comparison
 
-|                        |                             Quirks                             |                  [Cosmos Kit](https://cosmoskit.com/)                   | [Graz](https://graz.sh/) |
-| :--------------------: | :------------------------------------------------------------: | :---------------------------------------------------------------------: | :---------------------------------------------------------------------: |
-|   Framework Agnostic   |                               ✅                               |                             ❌                            |                             ❌                            |
-|   Supported Frameworks   |                               React and Vue 3 (extendable)                               |                             React                          |                              React                             |
-|  React Native Support  |                               🔜                               |                                   ❌                                    |                                   ❌                                    |
-| Wallet Connect Support |                               ✅                               |                                   ✅                                    |                                   ✅                                    |
-| Web Broadcast Support  |                               ✅                               |                                   ❌                                    |                                   ❌                                    |
-|      SSR Support       |                               ✅                               |                                   ✅                                    |                                   ✅                                    |
-|      Plugins       |                               🔜                               |                                   ❌                                    |                                   ❌                                   |
-|      Bundle Size       | [2.3KB](https://bundlephobia.com/package/@quirks/react@0.3.10) | [16.7KB](https://bundlephobia.com/package/@cosmos-kit/react-lite@2.5.9) | [109.1KB](https://bundlephobia.com/package/graz@0.1.1)* |
-| Vendor Chunk Splitting |                               ✅                               |                                   ❌                                    |                                   ❌                                    |
-| UI Kit |                               🔜                               |                                   ✅                                    |                                   ❌                                    |
+|                        |                             Quirks                             |                  [Cosmos Kit](https://cosmoskit.com/)                   |                 [Graz](https://graz.sh/)                 |
+| :--------------------: | :------------------------------------------------------------: | :---------------------------------------------------------------------: | :------------------------------------------------------: |
+|   Framework Agnostic   |                               ✅                               |                                   ❌                                    |                            ❌                            |
+|  Supported Frameworks  |                  React and Vue 3 (extendable)                  |                                  React                                  |                          React                           |
+|  React Native Support  |                               🔜                               |                                   ❌                                    |                            ❌                            |
+| Wallet Connect Support |                               ✅                               |                                   ✅                                    |                            ✅                            |
+| Web Broadcast Support  |                               ✅                               |                                   ❌                                    |                            ❌                            |
+|      SSR Support       |                               ✅                               |                                   ✅                                    |                            ✅                            |
+|        Plugins         |                               🔜                               |                                   ❌                                    |                            ❌                            |
+|      Bundle Size       | [2.3KB](https://bundlephobia.com/package/@quirks/react@0.3.10) | [16.7KB](https://bundlephobia.com/package/@cosmos-kit/react-lite@2.5.9) | [109.1KB](https://bundlephobia.com/package/graz@0.1.1)\* |
+| Vendor Chunk Splitting |                               ✅                               |                                   ❌                                    |                            ❌                            |
+|         UI Kit         |                               🔜                               |                                   ✅                                    |                            ❌                            |
 
 \* They offer several features, not only connecting and managing everything related to the wallet, this justifies the clear difference from other adapters.
 
