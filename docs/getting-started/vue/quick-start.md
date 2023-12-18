@@ -92,3 +92,4 @@ const { wallets } = useConfig();
 - **[useChains](./hooks/use-chains)**
 - **[useConfig](./hooks/use-config)**
 - **[useWalletConnect](./hooks/use-wallet-connect)**
+- **[useWalletEvents](./hooks/use-wallet-events)**
