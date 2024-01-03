@@ -73,15 +73,14 @@ const config: Config = {
   wallets: [keplrExtension, leapExtension],
   chains: [osmosis],
   assetsLists: [osmosisAssetList],
-  persistOptions: ssrPersistOptions,
 };
 
 function App({ Component, pageProps }: AppProps) {
-    return <QuirksConfig config={config}>
-      <QuirksNextProvider>
+    return <QuirksNextProvider>
+      <QuirksConfig config={config}>
         <Component {...pageProps} />
-      </QuirksNextProvider>
-    </QuirksConfig>;
+      </QuirksConfig>;
+    </QuirksNextProvider>
 }
 ```
 
