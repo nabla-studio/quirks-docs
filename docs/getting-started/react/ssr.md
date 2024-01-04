@@ -14,7 +14,7 @@ If you wanna use Next.js, you need to use an extra provider to avoid any hydrati
 
 import { osmosis, osmosisAssetList } from "@nabla-studio/chain-registry";
 import { QuirksConfig, QuirksNextProvider } from "@quirks/react";
-import { Config, ssrPersistOptions } from "@quirks/store";
+import { Config } from "@quirks/store";
 import { keplrExtension, leapExtension } from "@quirks/wallets";
 import { PropsWithChildren } from "react";
 
@@ -22,14 +22,15 @@ const config: Config = {
   wallets: [keplrExtension, leapExtension],
   chains: [osmosis],
   assetsLists: [osmosisAssetList],
-  persistOptions: ssrPersistOptions,
 };
 
 export const Provider = ({ children }: PropsWithChildren<unknown>) => {
   return (
-    <QuirksConfig config={config}>
-      <QuirksNextProvider>{children}</QuirksNextProvider>
-    </QuirksConfig>
+    <QuirksNextProvider>
+      <QuirksConfig config={config}>
+        {children}
+      </QuirksConfig>
+    </QuirksNextProvider>
   );
 };
 ```
@@ -64,7 +65,7 @@ export default function RootLayout({
 ```tsx title="/pages/_app.tsx"
 import { osmosis, osmosisAssetList } from "@nabla-studio/chain-registry";
 import { QuirksConfig, QuirksNextProvider } from "@quirks/react";
-import { Config, ssrPersistOptions } from "@quirks/store";
+import { Config } from "@quirks/store";
 import { keplrExtension, leapExtension } from "@quirks/wallets";
 import type { PropsWithChildren } from "react";
 import type { AppProps } from "next/app";
