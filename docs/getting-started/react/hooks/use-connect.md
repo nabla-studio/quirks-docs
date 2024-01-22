@@ -39,3 +39,7 @@ None
     - A derived boolean from the `status` variable above, provided for convenience.
 - **`rejected: boolean`**
     - A derived boolean from the `status` variable above, provided for convenience.
+- **`wallet: Wallet`**
+    - Instance of the currently connected wallet.
+- **`walletName: string`**
+    - The name of the connected wallet.
