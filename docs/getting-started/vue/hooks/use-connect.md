@@ -39,7 +39,7 @@ None
     - A derived boolean from the `status` variable above, provided for convenience.
 - **`rejected: Ref<boolean>`**
     - A derived boolean from the `status` variable above, provided for convenience.
-- **`wallet: Wallet`**
+- **`wallet: Ref<Wallet>`**
     - Instance of the currently connected wallet.
-- **`walletName: string`**
+- **`walletName: Ref<string>`**
     - The name of the connected wallet.
