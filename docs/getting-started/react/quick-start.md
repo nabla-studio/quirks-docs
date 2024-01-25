@@ -53,15 +53,15 @@ export const WalletsConnector = () => {
   }
 
   return wallets.map((wallet) => (
-    <div key={wallet.options.name}>
+    <div key={wallet.options.wallet_name}>
       <button
-        onClick={async () => {
-          await connect(wallet.options.name);
+        onClick={() => {
+          connect(wallet.options.wallet_name);
         }}
       >
         <img
-          src={wallet.options.logoUrls?.light?.svg}
-          alt={wallet.options.prettyName}
+          src={wallet.logoLight}
+          alt={wallet.options.pretty_name}
           height="48px"
           width="48px"
         />
@@ -70,9 +70,9 @@ export const WalletsConnector = () => {
       {!wallet.injected ? (
         <a
           href={
-            wallet.options.downloads && wallet.options.downloads.length > 0
-              ? wallet.options.downloads[0].link
-              : "#"
+            wallet.options.platforms && wallet.options.platforms.length > 0
+              ? wallet.options.platforms[0].install_link
+              : '#'
           }
           target="_blank"
         >
