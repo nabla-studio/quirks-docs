@@ -35,7 +35,7 @@ export const ConnectionButton = () => {
     return <button onClick={disconnect}>Disconnect</button>;
   }
 
-  return <button onClick={() => connect("keplr-extension")} />;
+  return <button onClick={() => connect("keplrextension")} />;
 };
 ```
 

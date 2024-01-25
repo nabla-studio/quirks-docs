@@ -35,7 +35,7 @@ const { connect, disconnect, connected } = useConnect();
 
 <template>
   <button @click="disconnect" v-if="connected">DISCONNECT</button>
-  <button @click="connect("keplr-extension")" v-else>CONNECT</button>
+  <button @click="connect("keplrextension")" v-else>CONNECT</button>
 </template>
 ```
 
