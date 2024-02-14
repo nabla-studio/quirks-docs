@@ -1,4 +1,5 @@
-# Website
+# DEPRECATED
+# MOVED TO [NEW REPO](https://github.com/nabla-studio/quirks-website) 
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
